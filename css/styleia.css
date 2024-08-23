@@ -1,0 +1,208 @@
+/* Reset CSS */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #FAF8EF;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #FFDDC1;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #FFC0CB;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+    color: #444;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6F61;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    background-color: #FFF7E1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FF6F61;
+}
+
+/* Profile Picture Section */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.profile-text {
+    max-width: 800px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .profile-container {
+        flex-direction: row;
+    }
+    .profile-pic {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+    .profile-text {
+        text-align: left;
+    }
+}
+/* Generador de Biografía */
+#random-user {
+    background-color: #E0F7FA;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#random-user button {
+    background-color: #00796B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#random-user button:hover {
+    background-color: #004D40;
+}
+
+#user-profile {
+    margin-top: 20px;
+}
+
+#user-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#user-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#user-email {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Specific Sections */
+.education-item, .experience-item, .project-item, .course-item {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto; /* Center the containers */
+}
+
+.education-item h3, .experience-item h3, .project-item h3, .course-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Skills Section */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.skills ul li {
+    background-color: #FFEBE7;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    color: #444;
+    font-weight: bold;
+}
+
+/* Courses Section */
+.courses .course-item {
+    max-width: 400px; /* Smaller width for courses */
+    margin: 20px auto; /* Center the containers */
+    padding: 15px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #FFDDC1;
+    color: #444;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #FFC0CB;
+}
+
+footer p {
+    margin: 0;
+}

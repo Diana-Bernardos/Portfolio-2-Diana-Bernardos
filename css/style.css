@@ -1,0 +1,391 @@
+/* Reset CSS */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    position: relative;
+    background-color:#FFEBE7;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body::before {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFDDC1; /* Color negro con opacidad del 50% */
+    z-index: -1; /* Asegura que el color de superposición esté detrás del contenido */
+}
+
+/* Header Styling */
+header {
+    background-color: #FFDDC1;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #FFC0CB;
+    max-width: 900px;
+    margin-top: 20px;
+    margin:0 auto;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+    color: #444;
+    transition: color 0.3s;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+header:hover h1 {
+    color: #FF6F61;
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+    
+  
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6F61;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    background-color: #FFF7E1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FF6F61;
+}
+
+/* Section Hover Effect */
+.section:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Profile Picture Section */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    object-fit: cover;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.profile-pic:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.profile-text {
+    max-width: 800px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Specific Sections */
+.education-item, .experience-item, .project-item, .course-item {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto; /* Center the containers */
+    transition: box-shadow 0.3s, transform 0.3s;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.education-item h3, .experience-item h3, .project-item h3, .course-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Section Item Hover Effect */
+.education-item:hover, .experience-item:hover, .project-item:hover, .course-item:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Skills Section */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skills ul li {
+    background-color: #FFEBE7;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    color: #444;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.skills ul li:hover {
+    background-color: #FFDDC1;
+    transform: scale(1.1);
+}
+
+/* Courses Section */
+/* Sección de Cursos */
+/* Sección de Cursos */
+#cursos {
+    padding: 40px;
+    background-color: #FFF7E1; /* Mismo color pastel que el resto del portfolio */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cursos h2 {
+    color:  #FF6F61;
+    margin-bottom: 30px;
+}
+
+/* Cursos Grid */
+.cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.curso-item {
+    background-color: #FFFFFF; /* Mantén el color blanco para el contraste */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.curso-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.curso-item {
+    font-size: 1rem;
+    color: #3E4A61; /* Mismo color para coherencia */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #FFDDC1;
+    color: #444;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #FFC0CB;
+    transition: color 0.3s;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer:hover {
+    color: #FF6F61;
+}
+
+/* Sección de Proyectos */
+#proyectos {
+    padding: 40px;
+    background-color: #F7E7CE; /* Color pastel */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+
+#proyectos h2 {
+    text-align: center;
+    color: #3E4A61;
+    margin-bottom: 30px;
+}
+
+.proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto-imagen {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+}
+
+.proyecto-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto-detalles {
+    flex: 2;
+    min-width: 250px;
+}
+
+.proyecto-detalles h3 {
+    color: #3E4A61;
+    margin-bottom: 15px;
+}
+
+.proyecto-detalles p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .proyecto {
+        flex-direction: column;
+    }
+
+    .proyecto-imagen {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .proyecto-detalles {
+        text-align: center;
+    }
+    /* Animación para que los apartados aparezcan desde la izquierda */
+/* Animación para que los apartados aparezcan desde la izquierda */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación para que los apartados aparezcan desde la derecha */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Aplicar la animación a los apartados */
+.section {
+    opacity: 0; /* Iniciar con opacidad 0 para la animación */
+    animation-duration: 5s; /* Duración de la animación */
+    animation-fill-mode: forwards; /* Mantener el estado final después de la animación */
+}
+
+/* Animar apartados desde la izquierda */
+.section-left {
+    animation-name: slideInFromLeft;
+}
+
+/* Animar apartados desde la derecha */
+.section-right {
+    animation-name: slideInFromRight;
+}
+.section:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.section:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.section:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+
+}
